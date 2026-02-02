@@ -1,0 +1,39 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Core LangChain & LLM Dependencies
+# ═══════════════════════════════════════════════════════════════════════════════
+langgraph>=0.1.0              # LangGraph for workflow orchestration
+langchain>=0.1.0              # LangChain core framework
+langchain-core>=0.1.0         # LangChain core utilities
+langchain-openai>=0.1.0       # OpenAI integration for ChatOpenAI
+langchain-google-genai>=0.0.1 # Optional: Google Generative AI support
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Data Validation & Structured Output
+# ═══════════════════════════════════════════════════════════════════════════════
+pydantic>=2.0.0   # Type validation and structured output (used for models.py classes)
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Configuration & Environment Management
+# ═══════════════════════════════════════════════════════════════════════════════
+python-dotenv>=1.0.0  # Environment variable management (.env files)
+pyyaml>=6.0           # YAML file parsing for prompt_manager.py
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Optional: Production Dependencies
+# ═══════════════════════════════════════════════════════════════════════════════
+# Uncomment below if deploying to production with Redis support
+
+redis>=5.0.0          # Redis client for rate limiting, cost tracking, and caching
+# redis[hiredis]      # Optional: High-performance Redis parser
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Optional: Web Interface & Visualization
+# ═══════════════════════════════════════════════════════════════════════════════
+streamlit>=1.28.0     # Web framework for interactive demos (streamlit_app.py)
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Optional: Development & Testing Dependencies
+# ═══════════════════════════════════════════════════════════════════════════════
+# pytest>=7.0.0         # Unit testing framework
+# pytest-asyncio>=0.21.0 # Async test support
+# python-json-logger>=2.0.0 # JSON logging (if using advanced logging)
